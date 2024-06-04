@@ -83,9 +83,9 @@ export const createFormInput = () => {
             fakeAjaxRequest(formData)
                 .then(response => {
                     showPopup('Спасибо за заказ')
-                    nameInput.value = 0
-                    addressInput.value = 0
-                    phoneInput.value = 0
+                    nameInput.value = ''
+                    addressInput.value = ''
+                    phoneInput.value = ''
                 })
                 .catch(error => {
                     showPopup('Ошибка при отправке формы')
